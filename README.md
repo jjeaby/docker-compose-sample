@@ -14,7 +14,7 @@ docker-compose -f docker-composer.yml up
 ### 동작 확인 
 flask1 의 5001 port 로 request 를 요청하면 다른 flask2 의 5002 port 로 요청하여 response 를 준다.
 ```
-curl http://localhost:5001/aaaaa
+curl http://localhost:5001/docker-compose
 ```
 ![docker-compose 실행 로그](/img/Docker-Compose-Run-Test.png)
 
