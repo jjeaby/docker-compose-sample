@@ -1,0 +1,25 @@
+version: '2.1'
+services:
+  squirtle:
+    build:
+      context: /home/jjeaby/Dev/01.github.com/squirtle/docker-compose
+      dockerfile: Dockerfile
+    container_name: testa
+    image: testa
+    restart: unless-stopped
+    hostname: testa
+    ports:
+      - "41701:41701"
+  scirocco:
+    build:
+      context: /home/jjeaby/Dev/01.github.com/squirtle/docker-compose
+      dockerfile: Dockerfile
+
+    environment:
+      NAME_ENV: ${
+    container_name: testb
+    image: testb
+    restart: unless-stopped
+    hostname: testb
+    ports:
+      - "10801:10801"

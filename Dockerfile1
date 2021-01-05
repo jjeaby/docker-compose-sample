@@ -1,0 +1,10 @@
+FROM debian:jessie-slim
+
+ENV NAME_ENV=A
+ARG NAME_ARG=A
+
+RUN echo "envirment = ${NAME_ENV:-A}" \
+    && echo "argument = ${NAME_ARG:-A}"
+
+CMD echo "envirment = ${NAME_ENV:-A}" \
+    && echo "argument = ${NAME_ARG:-A}"
