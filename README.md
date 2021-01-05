@@ -2,7 +2,7 @@
 
 #### docker-compose up
 ### docker-compose 로 구성되는 container 구성도
-![docker-compose 구](/img/Docker-Compose-img.png)
+![docker-compose 구성](/img/Docker-Compose-img.png)
 
 #### docker-compose up 으로 docker container 를 실행 
 ```
